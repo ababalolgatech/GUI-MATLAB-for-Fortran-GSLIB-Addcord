@@ -1,0 +1,21 @@
+classdef addcoord < handle
+    
+    
+    properties
+
+          
+     %  Data 
+        data ;
+        
+    end
+    
+    methods
+       
+         obj = run_exe(obj,parfile) ;
+		 obj = make_param(obj,dir) ;
+         obj = write_param(obj, parfile) ;
+         obj = write_data(obj, data,fp) ;
+         obj = read_variogram(obj,ndir,nvariogram)
+    end
+    
+end
